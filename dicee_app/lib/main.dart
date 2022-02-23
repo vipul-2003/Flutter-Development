@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Dicee'),
           backgroundColor: Colors.red,
         ),
-        body: DicePage(),
+        body: const DicePage(),
       ),
     );
   }
