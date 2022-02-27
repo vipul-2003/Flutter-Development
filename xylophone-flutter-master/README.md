@@ -1,3 +1,3 @@
 # Xylophone 🎹
 
-<img src="./Xylophone_ScreenShot.png" width = 1000 height = 1000 >
+![image](https://github.com/vipul-2003/Flutter-Development/blob/main/xylophone-flutter-master/Xylophone_ScreenShot.png)
