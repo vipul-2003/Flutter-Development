@@ -53,12 +53,6 @@ class _loginScreenState extends State<loginScreen> {
                       decoration: InputDecoration(
                         labelText: 'E-mail Address',
                         hintText: 'Enter Your Email ID',
-                        // labelStyle: TextStyle(
-                        //   fontWeight: FontWeight.bold,
-                        //   fontSize: 20.0,
-                        //   color: Colors.black,
-                        // ),
-                          
                           border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
@@ -82,12 +76,8 @@ class _loginScreenState extends State<loginScreen> {
                       decoration: InputDecoration(
                         labelText: 'Create Password',
                         hintText: 'Enter your password',
-                        labelStyle: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20.0,
-                          color: Colors.black,
-                        ),
-                        border: const OutlineInputBorder(),
+                        border:  OutlineInputBorder(borderRadius: BorderRadius.circular(20),),
+                          
                         suffixIcon: IconButton(
                           icon: Icon(_secureText
                               ? Icons.remove_red_eye
@@ -113,12 +103,7 @@ class _loginScreenState extends State<loginScreen> {
                       decoration: InputDecoration(
                         labelText: 'Confirm Password',
                         hintText: 'Qwerty@1234',
-                        labelStyle: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20.0,
-                          color: Colors.black,
-                        ),
-                        border: const OutlineInputBorder(),
+                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(20),),
                         suffixIcon: IconButton(
                           icon: Icon(_secureText
                               ? Icons.remove_red_eye
