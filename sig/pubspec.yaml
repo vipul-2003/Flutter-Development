@@ -86,7 +86,7 @@ flutter:
   #         weight: 700
   #
   assets:
-    - assets/images
+    - images/
 
   fonts:
     - family : Pacifico

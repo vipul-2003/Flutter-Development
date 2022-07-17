@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatefulWidget {
+class loginScreen extends StatefulWidget {
   static const String id = 'login_screen';
 
-  const LoginScreen({Key? key}) : super(key: key);
+  const loginScreen({Key? key}) : super(key: key);
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<loginScreen> createState() => _loginScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _loginScreenState extends State<loginScreen> {
   final bool _secureText = true;
   late String email;
   late String password;
@@ -19,15 +19,14 @@ class _LoginScreenState extends State<LoginScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            // Image.asset('images/ggsipu.jpg',
-            // height : 200 ,
-            // width : 200,
-            // ),
+            Image.asset('images/ggsipu.jpg',
+            height : 200 ,
+            width : 200,
+            ),
             Expanded(
               flex: 3,
               child: Container(
                   height: 150.00,
-                  
                   decoration: const BoxDecoration(
                     color: Color.fromARGB(255, 221, 238, 250),
                     borderRadius: BorderRadius.only(
@@ -85,7 +84,6 @@ class _LoginScreenState extends State<LoginScreen> {
                           border: OutlineInputBorder(),
                           filled: true,
                         ),
-                        keyboardType: TextInputType.emailAddress,
                       ),
                       SizedBox(
                         height: 20.0,
@@ -106,7 +104,6 @@ class _LoginScreenState extends State<LoginScreen> {
                           border: OutlineInputBorder(),
                           filled: true,
                         ),
-                        keyboardType: TextInputType.emailAddress,
                       ),
                     ],
                   )),

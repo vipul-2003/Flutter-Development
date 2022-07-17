@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Screens/LoginScreen.dart';
+import 'Screens/loginScreen.dart';
 
 void main() {
   runApp( MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       
       debugShowCheckedModeBanner: false,
 
-      home : LoginScreen(),
+      home : loginScreen(),
       //initialRoute: WelcomeScreen.id,
       // routes: {
       //  LoginScreen.id: (context) => const LoginScreen(),
