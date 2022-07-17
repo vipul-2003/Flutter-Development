@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "746304821451",
+    "project_id": "sdc-usict",
+    "storage_bucket": "sdc-usict.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746304821451:android:9a1b6be64b8fee9a53a34e",
+        "android_client_info": {
+          "package_name": "com.example.sdc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746304821451-mijo9n9je7ahe33fu26a04s0dck4ng07.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANhY2NgzXf3bAMEYxDiXZ7P77ylOfXolY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746304821451-mijo9n9je7ahe33fu26a04s0dck4ng07.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

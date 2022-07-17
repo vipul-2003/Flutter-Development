@@ -26,29 +26,17 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-
-   
-
-
-
-      child: Container(
-        color: Colors.greenAccent,
-        height: 400,
-        width: 300,
-
-        child: Center(
-          
-          child: Text(
+        child: Container(
+      color: Colors.greenAccent,
+      height: 400,
+      width: 300,
+      child: Center(
+        child: Text(
           'hello there',
-          
-
-          textAlign : TextAlign.center,
-
-          ),
+          style: TextStyle(fontSize: 40.0),
+          textAlign: TextAlign.center,
         ),
-        
-        )
-    );
-    
+      ),
+    ));
   }
 }
