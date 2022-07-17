@@ -22,7 +22,7 @@ class _loginScreenState extends State<loginScreen> {
             Expanded(
               flex: 3,
               child: Container(
-                alignment :Alignment.center ,
+                alignment: Alignment.center,
                 height: 150.00,
                 decoration: const BoxDecoration(
                   color: Color.fromARGB(255, 221, 238, 250),
@@ -32,7 +32,6 @@ class _loginScreenState extends State<loginScreen> {
                   ),
                 ),
                 child: Column(
-                  
                   children: [
                     const Text(
                       'Sign Up',
@@ -45,29 +44,26 @@ class _loginScreenState extends State<loginScreen> {
                     const SizedBox(
                       height: 50.0,
                     ),
-                     TextFormField(
+                    TextFormField(
                       // onChanged: (value) {
                       //   email = value;
                       // },
                       textAlign: TextAlign.center,
                       decoration: InputDecoration(
                         labelText: 'E-mail Address',
+                        labelStyle: const TextStyle(),
                         hintText: 'Enter Your Email ID',
-                          border: OutlineInputBorder(
+                        border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
-
                         filled: true,
                       ),
 
                       keyboardType: TextInputType.emailAddress,
-                      
                     ),
-
                     const SizedBox(
                       height: 20.0,
                     ),
-
                     TextField(
                       // onChanged: (value) {
                       //   email = value;
@@ -76,8 +72,9 @@ class _loginScreenState extends State<loginScreen> {
                       decoration: InputDecoration(
                         labelText: 'Create Password',
                         hintText: 'Enter your password',
-                        border:  OutlineInputBorder(borderRadius: BorderRadius.circular(20),),
-                          
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
                         suffixIcon: IconButton(
                           icon: Icon(_secureText
                               ? Icons.remove_red_eye
@@ -103,21 +100,31 @@ class _loginScreenState extends State<loginScreen> {
                       decoration: InputDecoration(
                         labelText: 'Confirm Password',
                         hintText: 'Qwerty@1234',
-                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(20),),
-                        suffixIcon: IconButton(
-                          icon: Icon(_secureText
-                              ? Icons.remove_red_eye
-                              : Icons.security),
-                          onPressed: () {
-                            setState(() {
-                              _secureText = !_secureText;
-                            });
-                          },
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
                         ),
                       ),
-                      obscureText: _secureText,
+                      obscureText: true,
                       keyboardType: TextInputType.name,
                     ),
+
+                    const SizedBox(
+                      height : 20,
+                    ),
+
+                    TextButton(
+                      onPressed: null,
+                    
+                     child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                      children:const  [
+                        
+                      Text('Sign up >',
+                      style : TextStyle(fontSize: 15,)),
+                   
+
+                     ],)),
+
+
                   ],
                 ),
               ),
@@ -150,4 +157,4 @@ class _loginScreenState extends State<loginScreen> {
       ),
     );
   }
-}
+}
